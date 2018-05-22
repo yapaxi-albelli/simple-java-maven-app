@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'maven:3-alpine' 
-            args '-v /root/.m2:~/test'
+            args '-v /root/.m2:/home/jenkins'
         }
     }
     stages {
@@ -13,7 +13,7 @@ pipeline {
         }
 	stage('Azaza') {
 	    steps {
-	        sh 'mkdir ~/test && echo 5 >> ~/test/aa.txt'
+	        sh 'echo 5 >> ~/aa.txt'
 	    }
 	}
     }
