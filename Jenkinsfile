@@ -13,7 +13,7 @@ pipeline {
         }
 	stage('Azaza') {
 	    steps {
-	        sh 'ls'
+	        sh 'echo 5 >> /root/.m2/aaa'
 	    }
 	}
     }
