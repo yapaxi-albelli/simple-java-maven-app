@@ -13,7 +13,7 @@ pipeline {
         }
 	stage('Azaza') {
 	    steps {
-	        sh 'echo 5 >> /home/jenkins/.m2/aaa'
+	        sh 'chmod a+rwx /home/jenkins/.m2 && echo 5 >> /home/jenkins/.m2/aaa'
 	    }
 	}
     }
