@@ -13,7 +13,7 @@ pipeline {
         }
 	stage('Azaza') {
 	    steps {
-	        sh 'ls /home/jenkins/.m2'
+	        sh 'echo 5 >> /home/jenkins/.m2/aaa'
 	    }
 	}
     }
