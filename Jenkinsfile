@@ -13,7 +13,7 @@ pipeline {
         }
 	stage('Azaza') {
 	    steps {
-	        sh 'echo 5 >> ./aa.txt'
+	        sh 'pwd && echo 5 >> ./aa.txt && ls /var/lib/jenkins/workspace'
 	    }
 	}
     }
