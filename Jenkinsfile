@@ -13,7 +13,7 @@ pipeline {
         }
 	stage('Azaza') {
 	    steps {
-	        sh 'mkdir /var/lib/jenkins/workspace/simple-java-maven-app-xxx && echo 100500 >> /var/lib/jenkins/workspace/simple-java-maven-app-xxx/aa.txt'
+	        sh 'echo 100500 >> ../simple-java-maven-app-xxx/aa.txt'
 	    }
 	}
     }
