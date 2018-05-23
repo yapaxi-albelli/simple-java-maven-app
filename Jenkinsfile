@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'maven:3-alpine' 
-            args '-v /root/.m2:/var/lib/jenkins/workspace'
+            args '-v /root/.m2:/var/lib/jenkins/workspace/simple-java-maven-app'
         }
     }
     stages {
@@ -13,7 +13,7 @@ pipeline {
         }
 	stage('Azaza') {
 	    steps {
-	        sh 'pwd && echo 5 >> ./aa.txt && ls /var/lib/jenkins/workspace'
+	        sh 'echo 100500 >> ./aa.txt'
 	    }
 	}
     }
