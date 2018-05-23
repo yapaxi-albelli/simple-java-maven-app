@@ -13,7 +13,7 @@ pipeline {
         }
 	stage('Azaza') {
 	    steps {
-	        sh 'echo 100500 >> ./aa.txt'
+	        sh 'echo 100500 >> ./aa1122.txt'
 	    }
 	}
     }
