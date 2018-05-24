@@ -11,10 +11,10 @@ pipeline {
                 sh 'mvn -B -DskipTests clean package' 
             }
         }
-	stage('Azaza') {
-	    steps {
-	        sh 'echo 100500 >> ./aa1122.txt'
-	    }
-	}
+        stage('Azaza') {
+            steps {
+                sh 'echo 100500 >> ./aa1122.txt'
+            }
+        }
     }
 }
