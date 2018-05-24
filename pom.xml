@@ -36,7 +36,7 @@
             <manifest>
               <addClasspath>true</addClasspath>
               <classpathPrefix>lib/</classpathPrefix>
-              <mainClass>com.mycompany.app.App</mainClass>
+              <mainClass>MainKt</mainClass>
             </manifest>
           </archive>
         </configuration>
